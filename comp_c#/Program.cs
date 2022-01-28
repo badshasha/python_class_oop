@@ -4,7 +4,6 @@ using shavendra;
 
 namespace  shavendra
 {
-
     public class SimpleTest{
 
         public SimpleTest()
@@ -16,9 +15,7 @@ namespace  shavendra
         {            
             Console.WriteLine("working"); 
         }
-    }
-
-   
+    }   
 }
 
 
@@ -29,5 +26,4 @@ class Program{
       
         // Console.WriteLine(s.First_name);
     }
-
 }

@@ -8,12 +8,14 @@ class Employee:
 
     # create static varible 
     raise_amount = 1.04
+    number_of_emp = 0
 
 
     def __init__(self , first_name , secound_name , pay ) -> None:  
        self.first_name = first_name
        self.secound_name = secound_name
        self.pay = pay
+       Employee.number_of_emp += 1          # bad thing it's possible to access this element using self. keyword
     
     def fullName(self):                
         return f"{self.first_name} {self.secound_name}"  

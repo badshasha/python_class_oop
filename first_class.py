@@ -4,6 +4,9 @@
 
 # learning class variables : static information 
 
+from xmlrpc.client import boolean
+
+
 class Employee: 
 
     # create static varible 
@@ -15,7 +18,7 @@ class Employee:
        self.first_name = first_name
        self.secound_name = secound_name
        self.pay = pay
-       Employee.number_of_emp += 1          # bad thing it's possible to access this element using self. keyword
+       Employee.number_of_emp += 1                 
     
     def fullName(self):                
         return f"{self.first_name} {self.secound_name}"  
@@ -23,27 +26,41 @@ class Employee:
     def appl_raise(self):
         self.pay = int(self.pay * Employee.raise_amount)
 
+    # problem when we craeting instance method we have to pass instance 
+    # so how do we send class to the method 
+    # use @classmelthod 
+
+    @classmethod 
+    def static_raise_amout(cls , amout):  # cls stand for class 
+        cls.raise_amount = 2                # access element using cls 
+
+
+    @classmethod 
+    def from_string(cls, emp_stirng):
+        name , secound_name , pay = emp_stirng.split('-')
+        return cls(name,secound_name,pay)
+
+    @staticmethod
+    def simpleStatic():
+        print("working")
+
+
+    # staticmethod and classmethod are same but class method send class as instance 
+    # staticmoethd dont pass any thing 
+    # it's behave exacltly tipical function 
+
+
+    @staticmethod
+    def is_working(day) -> boolean :
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        else:
+            return True
+    
+    # think like this 
+        # if you using class instance then user @classmethod 
+        # if it's not use @staticmethod 
 
 
 # create instance 
 emp1 = Employee("shavendra","Ekanayake",1000)
-
-# bad oop static variable accessible to the instance     
-print(Employee.raise_amount)
-print(emp1.raise_amount)
-
-
-#  ===============================================================================================
-#  -----------------------------------------------------------------------------------------------
-
-# what is happen 
-    # if you try to access vairable using instance 
-        # 1. firts it's check the instance existing on the class instance 
-        # 2. if it's not it's check the main object 
-
-# -------------------------------------------------------------------------------------------------
-# =================================================================================================
-
-
-print(emp1.__dict__)
-print(Employee.__dict__)

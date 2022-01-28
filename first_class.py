@@ -20,8 +20,15 @@ class Employee:
     
     def appl_raise(self):
         self.pay = int(self.pay * Employee.raise_amount)
-    
-    
+
+
+
+# create instance 
+emp1 = Employee("shavendra","Ekanayake",1000)
+
+# bad oop static variable accessible to the instance     
+print(Employee.raise_amount)
+print(emp1.raise_amount)
 
 
 

@@ -45,6 +45,24 @@ class Employee:
         else:
             return True
 
+    def __str__(self):  # spcial method some say magic method 
+        return "str working"
+
+
+    @property
+    def email(self)-> str:
+        return f"{self.first_name}{self.secound_name}@email.com"
+    
+    @fullName.setter
+    def fullname(self,name):
+        self.first_name , self.secound_name = name.split(' ')
+    
+    @fullName.deleter
+    def fullname(self,name):
+        pass 
+
+
+
 
 
 class AnotherInheritance(Employee):
@@ -76,3 +94,5 @@ print(isinstance(emp1,Deveopers))  # check instance
 # check class 
 print(issubclass(Deveopers , Employee))
 print(issubclass(AnotherInheritance , Employee))
+
+print(emp1.email)

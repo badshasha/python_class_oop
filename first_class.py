@@ -3,23 +3,19 @@
 
 
 class Employee:  # this thing is a blue print of the class 
-   def __init__(self) -> None:  # constructor 
-       self.first_name = "Ekanayake"
+   def __init__(self , first_name , secound_name ) -> None:  # constructor 
+       self.first_name = first_name
+       self.secound_name = secound_name
 
-emp_1 = Employee() # this are the instances of the project 
-emp_2 = Employee() # this is a another instance 
+emp_1 = Employee("shavendra","Ekanayake")
+emp_2 = Employee("kanishke" ,"Ekanayake") 
+
+print(emp_1.first_name)
+print(emp_2.first_name)
+
+emp_2.age = 27  # this is why python is not good oop language 
 
 
-print(emp_1)
-print(emp_2)
 
-
-emp_1.first_name = "shavendra"
-emp_2.first_name = "pasidu"
-
-print(emp_1.first_name)  # this is not good man 
-
-                    # <__main__.Employee object at 0x7f9d08adbcf8>
-                    # <__main__.Employee object at 0x7f9d08adbef0>   each instance have got seperate memeory location 
 
 

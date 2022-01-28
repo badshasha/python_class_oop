@@ -26,8 +26,6 @@ class Employee:
     def appl_raise(self):
         self.pay = int(self.pay * Employee.raise_amount)
 
-  
-
     @classmethod 
     def static_raise_amout(cls , amout):  
         cls.raise_amount = 2                
@@ -52,9 +50,14 @@ class AnotherInheritance(Employee):
     pass
    
 class Deveopers(Employee):          # inheritance 
-    def __init__(self, first_name, secound_name, pay) -> None:  # take all the parameters need for the parenet 
+    def __init__(self, first_name, secound_name, pay,progamming) -> None:  # take all the parameters need for the parenet 
         super().__init__(first_name, secound_name, pay)         # call parent class constructor 
+      #  Employee.__init__(self,first_name,secound_name,pay)     # this thing also work but dont use it 
+        self.language = progamming
     
+    
+        
+
 
 
 
@@ -63,3 +66,4 @@ class Deveopers(Employee):          # inheritance
 # create instance 
 emp1 = AnotherInheritance("shavendra","Ekanayake",1000)
 print(help(emp1))
+

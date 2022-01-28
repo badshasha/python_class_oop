@@ -12,7 +12,13 @@ emp_2 = Employee() # this is a another instance
 print(emp_1)
 print(emp_2)
 
-# <__main__.Employee object at 0x7f9d08adbcf8>
-# <__main__.Employee object at 0x7f9d08adbef0>   each instance have got seperate memeory location 
+
+emp_1.first_name = "shavendra"
+emp_2.first_name = "pasidu"
+
+print(emp_1.first_name)  # this is not good man 
+
+                    # <__main__.Employee object at 0x7f9d08adbcf8>
+                    # <__main__.Employee object at 0x7f9d08adbef0>   each instance have got seperate memeory location 
 
 

@@ -3,7 +3,8 @@
 
 
 class Employee:  # this thing is a blue print of the class 
-    pass
+   def __init__(self) -> None:  # constructor 
+       self.first_name = "Ekanayake"
 
 emp_1 = Employee() # this are the instances of the project 
 emp_2 = Employee() # this is a another instance 

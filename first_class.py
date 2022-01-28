@@ -4,6 +4,7 @@
 
 # learning class variables : static information 
 
+from tkinter import E
 from xmlrpc.client import boolean
 
 
@@ -65,5 +66,13 @@ class Deveopers(Employee):          # inheritance
 
 # create instance 
 emp1 = AnotherInheritance("shavendra","Ekanayake",1000)
-print(help(emp1))
+# print(help(emp1))
 
+print(isinstance(emp1,AnotherInheritance))
+print(isinstance(emp1,Employee))
+print(isinstance(emp1,Deveopers))  # check instance 
+
+
+# check class 
+print(issubclass(Deveopers , Employee))
+print(issubclass(AnotherInheritance , Employee))

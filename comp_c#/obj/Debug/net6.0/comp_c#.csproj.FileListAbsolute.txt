@@ -1,0 +1,15 @@
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.csproj.AssemblyReference.cache
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.GeneratedMSBuildEditorConfig.editorconfig
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.AssemblyInfoInputs.cache
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.AssemblyInfo.cs
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.csproj.CoreCompileInputs.cache
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/comp_c#
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/comp_c#.deps.json
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/comp_c#.runtimeconfig.json
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/comp_c#.dll
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/ref/comp_c#.dll
+/home/shavendra/Desktop/python oop/comp_c#/bin/Debug/net6.0/comp_c#.pdb
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.dll
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/ref/comp_c#.dll
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.pdb
+/home/shavendra/Desktop/python oop/comp_c#/obj/Debug/net6.0/comp_c#.genruntimeconfig.cache

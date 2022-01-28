@@ -27,7 +27,12 @@ print(emp_2.first_name)
 
 print(emp_1.fullName())
 
+def simple():
+    print("working clas")
 
+
+emp_1.simple = simple  # adding new method from outside # not good 
+emp_1.simple()
 
 
 

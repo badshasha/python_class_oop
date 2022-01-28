@@ -2,37 +2,26 @@
 # purpose : learning python oop concept 
 
 
-class Employee:  # this thing is a blue print of the class 
-    def __init__(self , first_name , secound_name ) -> None:  # constructor 
+# learning class variables : static information 
+
+class Employee: 
+
+    # create static varible 
+    raise_amount = 1.04
+
+
+    def __init__(self , first_name , secound_name , pay ) -> None:  
        self.first_name = first_name
        self.secound_name = secound_name
+       self.pay = pay
     
-    def fullName(self): # based on the explaination it's mention they need first instance for access to the internal parametes 
-        print(self.first_name)  # not like static lagugage " kalin waliw eketa access wenna oyaya self instance eke parameter ekaka widihata send karanna one "
-        return f"{self.first_name} {self.secound_name}"
-        
+    def fullName(self):                
+        return f"{self.first_name} {self.secound_name}"  
+    
+    def appl_raise(self):
+        self.pay = int(self.pay * Employee.raise_amount)
     
     
-
-
-
-    
-
-emp_1 = Employee("shavendra","Ekanayake")
-emp_2 = Employee("kanishke" ,"Ekanayake") 
-
-print(emp_1.first_name)
-print(emp_2.first_name)
-
-
-print(emp_1.fullName())
-
-def simple():
-    print("working clas")
-
-
-emp_1.simple = simple  # adding new method from outside # not good 
-emp_1.simple()
 
 
 

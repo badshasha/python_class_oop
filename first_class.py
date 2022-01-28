@@ -26,28 +26,17 @@ class Employee:
     def appl_raise(self):
         self.pay = int(self.pay * Employee.raise_amount)
 
-    # problem when we craeting instance method we have to pass instance 
-    # so how do we send class to the method 
-    # use @classmelthod 
+  
 
     @classmethod 
-    def static_raise_amout(cls , amout):  # cls stand for class 
-        cls.raise_amount = 2                # access element using cls 
+    def static_raise_amout(cls , amout):  
+        cls.raise_amount = 2                
 
 
     @classmethod 
     def from_string(cls, emp_stirng):
         name , secound_name , pay = emp_stirng.split('-')
         return cls(name,secound_name,pay)
-
-    @staticmethod
-    def simpleStatic():
-        print("working")
-
-
-    # staticmethod and classmethod are same but class method send class as instance 
-    # staticmoethd dont pass any thing 
-    # it's behave exacltly tipical function 
 
 
     @staticmethod
@@ -56,11 +45,21 @@ class Employee:
             return False
         else:
             return True
-    
-    # think like this 
-        # if you using class instance then user @classmethod 
-        # if it's not use @staticmethod 
 
+
+
+class AnotherInheritance(Employee):
+    pass
+   
+class Deveopers(Employee):          # inheritance 
+    def __init__(self, first_name, secound_name, pay) -> None:  # take all the parameters need for the parenet 
+        super().__init__(first_name, secound_name, pay)         # call parent class constructor 
+    
+
+
+
+# learning inheritance 
 
 # create instance 
-emp1 = Employee("shavendra","Ekanayake",1000)
+emp1 = AnotherInheritance("shavendra","Ekanayake",1000)
+print(help(emp1))
